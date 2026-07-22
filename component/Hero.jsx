@@ -2,6 +2,7 @@
 
 import SoftAurora from "@/component/SoftAurora";
 import ClickSpark from "@/component/ClickSpark";
+import Navbar from "./Navbar";
 
 export default function Hero() {
     return (
@@ -29,7 +30,7 @@ export default function Hero() {
                     enableMouseInteraction
                     mouseInfluence={0.25}
                 />
-
+                <Navbar/>
                 <div className="absolute inset-0 z-10 flex items-center justify-center pointer-events-none">
                     <h1 className="text-5xl font-bold text-white drop-shadow-lg">
                         ARHAFi
