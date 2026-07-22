@@ -1,7 +1,16 @@
 import SoftAurora from "@/component/SoftAurora";
+import ClickSpark from "@/component/ClickSpark";
 
 export default function Home() {
   return (
+
+  <ClickSpark
+    sparkColor="#ffffff"
+    sparkSize={10}
+    sparkRadius={20}
+    sparkCount={8}
+    duration={400}
+  >
     <main className="relative w-full h-screen bg-black overflow-hidden">
       <SoftAurora
         speed={0.6}
@@ -26,5 +35,6 @@ export default function Home() {
         </h1>
       </div>
     </main>
-  );
+  </ClickSpark>
+  )
 }
